@@ -3,6 +3,8 @@ def prime?(num)
     false 
   elsif num == 2
     true
+  elsif num.even?
+    false
   elsif num > 2 && (2..num-1).find{|i| num % i == 0}
     false 
   else 
