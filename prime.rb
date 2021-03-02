@@ -8,12 +8,14 @@ require 'pry'
 
 def prime?(num)
   array = []
-  counter = (2..num).to_a
-  
-  num = num - 1
-  x = (2..num).to_a
-  y = x.reject {|n| n**2 > num}
-  z = y.reject {|n| n.even?}
-  a = z.select {|n| num + 1 % n == 0}
-  a.empty? && num + 1 > 1
+  n = 1
+  while n ** 2 <= num
+    if num % n == 0
+      array << num
+    end
+    n += 1
+  end
+  array
 end
+
+binding.pry
