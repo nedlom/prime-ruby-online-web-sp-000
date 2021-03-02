@@ -15,7 +15,7 @@ def prime?(num)
     end
     n += 1
   end
-  array
+  array.length == 1
 end
 
 binding.pry
