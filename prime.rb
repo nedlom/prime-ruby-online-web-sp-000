@@ -12,5 +12,5 @@ def prime?(num)
   y = x.reject {|n| n**2 > num}
   z = y.reject {|n| n.even?}
   a = z.select {|n| num + 1 % n == 0}
-  a.empty?
+  a.empty? && num + 1 > 1
 end
