@@ -7,6 +7,9 @@ require 'pry'
 # end
 
 def prime?(num)
+  array = []
+  counter = (2..num).to_a
+  
   num = num - 1
   x = (2..num).to_a
   y = x.reject {|n| n**2 > num}
