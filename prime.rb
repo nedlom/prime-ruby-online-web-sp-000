@@ -12,7 +12,7 @@ def prime?(num)
   y = x.reject {|n| n**2 > num}
   z = y.reject {|n| n.even? if n > 2}
   a = z.select {|n| num % n == 0}
-  !a.empty?
+  a.empty?
 end
 
 binding.pry
