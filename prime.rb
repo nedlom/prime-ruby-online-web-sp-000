@@ -8,7 +8,7 @@ require 'pry'
 
 def prime?(num)
   x = (2..num).to_a
-  y = x.reject {|n| n**n > num}
+  y = x.reject {|n| n**2 > num}
 end
 
 binding.pry
