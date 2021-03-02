@@ -15,4 +15,4 @@ def prime?(num)
   a.empty?
 end
 
-#binding.pry
+binding.pry
