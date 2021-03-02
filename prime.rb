@@ -7,5 +7,6 @@ def prime?(num)
 end
 
 def prime?(num)
-  
+  x = (2..num).to_a
+  y = x.
 end
