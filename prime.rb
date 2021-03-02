@@ -11,7 +11,7 @@ def prime?(num)
   n = 1
   while n ** 2 <= num
     if num % n == 0
-      array << num
+      array << n
     end
     n += 1
   end
