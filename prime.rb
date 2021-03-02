@@ -14,5 +14,3 @@ def prime?(num)
   a = z.select {|n| num + 1 % n == 0}
   a.empty?
 end
-
-binding.pry
