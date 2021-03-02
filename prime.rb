@@ -15,4 +15,3 @@ def prime?(num)
   num == 2 || a.empty?
 end
 
-binding.pry
